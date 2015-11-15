@@ -2,6 +2,12 @@
 #ifndef __DB_TABLE_H__
 #define __DB_TABLE_H__
 
+/*
+ 需要在stdafx.h中添加：
+ #import "C:\Program Files\Common Files\system\ado\msadox.dll"
+ #import "C:\Program Files\Common Files\system\ado\msado15.dll" rename("EOF","adoEOF")
+*/
+
 struct TABLE
 {
 	CString tableName;

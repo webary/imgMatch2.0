@@ -6,6 +6,9 @@
 #if !defined(AFX_STDAFX_H__3DFA5876_1256_46DC_85D9_92B52CA812AF__INCLUDED_)
 #define AFX_STDAFX_H__3DFA5876_1256_46DC_85D9_92B52CA812AF__INCLUDED_
 
+#define NO_WARN_MBCS_MFC_DEPRECATION  //关闭多字节不支持警告
+#ifndef _AFX_NO_AFXCMN_SUPPORT
+
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
@@ -25,7 +28,6 @@
 #import "C:\Program Files\Common Files\system\ado\msadox.dll" 
 #import "C:\Program Files\Common Files\system\ado\msado15.dll" rename("EOF","adoEOF")
 
-#ifndef _AFX_NO_AFXCMN_SUPPORT
 #include <afxcmn.h>			// MFC support for Windows Common Controls
 #endif // _AFX_NO_AFXCMN_SUPPORT
 //检查内存泄露
